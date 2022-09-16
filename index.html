@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="thread.js"></script>
+    <title>Twitter Thread Maker</title>
+</head>
+<body>
+    <h1>Twitter Thread Maker</h1>
+    <div>
+        <label for="text">Write your text</label>
+    </div>
+    <div>
+        <textarea id="text" cols="60" rows="20"></textarea>
+    </div>
+    <div>Delimiter</div>
+    <div>
+        <label><input type="radio" name="delimiter" value="nl" />New Line</label>
+        <label><input type="radio" name="delimiter" value="space" />Space</label>
+        <label><input type="radio" name="delimiter" value="both" checked />Both</label>
+    </div>
+    <div>Numbered</div>
+    <div>
+        <label><input type="radio" name="numbered" value="none" />None</label>
+        <label><input type="radio" name="numbered" value="simple" />Simple: n)</label>
+        <label><input type="radio" name="numbered" value="complete" checked />Complete: n/m)</label>
+    </div>
+    <div>
+        <button onclick="handleForm()">Make Thread</button>
+    </div>
+    <div id="thread"></div>
+</body>
+</html>
